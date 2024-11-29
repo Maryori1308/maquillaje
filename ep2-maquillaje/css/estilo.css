@@ -1,0 +1,581 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css');
+
+:root{
+
+    --color-negro:#000000;
+    --color-blanco:#FFFFFF;
+    --color-gris:#333333;
+    --color-beige:#F4EDEA;
+    --color-hueso:#F9F6F4;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Roboto Condensed", system-ui;
+   font-size: 20px; /*1rm*/
+   line-height: 2em;
+}
+   
+
+h1{
+    font-size: 2em;
+}
+
+h2{
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 40px;
+    text-transform: capitalize;
+    font-weight: 200;
+}
+
+h3{
+    font-size: 20px;
+  font-weight: 700;
+  margin-top: 20px;
+  align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+p{
+    margin-bottom: 20px;
+}
+
+img, iframe, video {
+    display: block;
+}
+
+#barra-superior {
+    background-color: var(--color-beige);
+    color: var(--color-gris);
+    font-size: 0.8em;
+}
+
+#barra-superior .bs-newsletter {
+    text-align: center;
+}
+
+
+#cabezera{
+    background-color: var(--color-blanco);
+    color:var(--color-negro);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+#carrusel{
+
+}
+
+#nosotros{
+    background-color: var(--color-blanco);
+    color: var(--color-negro);
+}
+
+#nosotros .col {
+    margin-bottom: 30px;
+}
+
+#consejos{
+   background-color: var(--color-beige); 
+   color: var(--color-negro);
+}
+
+#guia{
+   background-color: var(--color-beige);
+   color: var(--color-negro);
+}
+
+#historia{
+    background-color: var(--color-hueso);
+    color: var(--color-negro);
+}
+
+#historia .col {
+    margin-bottom: 30px;
+}
+
+#tendencias{
+    background: linear-gradient(90deg, rgba(187, 167, 138, 0.9) 40%, rgba(130, 112, 101, 0.7) 100%),url('../imagenes/tendencias.jpg');
+    background-repeat:no-repeat ;
+    background-size: cover;
+    background-position: right center;
+    background-attachment: fixed;
+}
+
+#usuarios{
+    background-color: var(--color-hueso);
+    color: var(--color-negro);
+}
+
+#usuarios .col:hover .alumno-hijo {
+    opacity: 1;
+}
+
+#usuarios .col:hover .alumno-hijo p {
+    transform: translateX(0px);
+}
+
+
+#pie{
+    background-color: var(--color-blanco);
+    color: var(--color-negro);
+}
+
+#iconos{
+    background-color: var(--color-gris);
+    color: var(--color-beige);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#iconos a {
+    color: var(--color-beige);
+    text-decoration: none;
+    margin:70px;
+}
+
+#iconos .row {
+    justify-content: space-between;
+    align-items: center;
+}
+
+#iconos .ic i {
+    font-size: 40px;
+}
+
+.espaciado{
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.contenedor{
+    max-width:70%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.imgfluid{
+    width: 100%;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.del-padded{
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.col{
+    flex-basis:0;
+    flex-grow: 1;
+
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.col-30 {
+    flex-basis: 30%;
+    max-width: 30%;
+}
+
+.col-33{
+    flex-basis: 33.3%;
+    max-width: 33.3%;
+
+}
+
+.col-50{
+    flex-basis: 50%;
+    max-width: 50%;
+}
+
+.col-66{
+    flex-basis: 66.7%;
+    max-width: 66.7%;
+}
+
+.col-70{
+    flex-basis: 70%;
+    max-width: 70%;
+}
+
+.col-25{
+    max-width: 25%;
+}
+
+.col-100{
+    flex-basis: 100%;
+    max-width: 100%;
+}
+
+.texto-tendencia{
+    font-size: 5em;
+    line-height: 2em;
+    color: var(--color-negro);
+}
+
+.texto-resaltado{
+    font-size: 1.5em;
+    color: var(--color-hueso);
+    font-family: Dancing Script;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.fondo-consejo{
+    background-image: url('../imagenes/guia.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+}
+
+.nav-bar{
+    display:flex; 
+    flex-direction:row;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.nav-logo{
+    width: 300px;
+    
+}
+
+.nav-menu{
+    display:flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.nav-menu-item{
+    margin-left: 10px;
+}
+
+.nav-menu-link{
+    color: var(--color-negro);
+    text-decoration:none;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-menu-link:hover{
+    background-color: var(--color-beige);
+    color: var(--color-gris);
+}
+
+.banner-padre {
+    /* Define el punto de inicio para el posicionamiento */
+    position: relative;
+}
+  
+.banner-hijo {
+    position: absolute; /* Para ubicar la caja hijo dentro de la caja padre */
+  
+    /* formato */
+    width: 600px;
+    background-color: var(--color-pie);
+    color: var(--color-blanco); 
+    padding: 20px;
+  
+    /* Coordenadas de posicionamiento (top, bottom, left, right) */
+    /* top: 0px;
+    left: 0px; */
+  
+    /* bottom: 0px;
+    right: 0px; */
+  
+    left: calc(50% - 300px);
+    bottom: -50px;
+}
+  
+.banner-hijo h2 {
+    font-size: 30px;
+}
+
+.scroll-up {
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    background-color: var(--color-beige);
+    color: var(--color-gris);
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+.alumno-padre {
+    position: relative;
+}
+  
+.alumno-hijo {
+    position: absolute;
+  
+    /* Formato */
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: var(--color-blanco);
+    background-color: rgba(246, 204, 188, 0.7);
+  
+  
+    /* Posicionamiento */
+    top: 0;
+    left: 0;
+  
+    opacity: 0; /* oculta la caja */
+    transition: all 0.3s ease-in-out;
+
+}
+  
+.alumno-hijo p {
+    position: absolute;
+    top: calc(50% - 2.5em);
+  
+    /* Transformación */
+    transform: translateX(-100px);
+    transition: all 0.3s ease-in-out;
+}
+
+.pagina-activa {
+    background-color: var(--color-gris);
+    color: var(--color-blanco);
+  }
+
+.btn {
+    border: 2px solid var(--color-gris);
+    padding: 15px 30px;
+    text-align: center;
+    background-color: transparent;
+}
+
+.btn1 {
+    background-color: var(--color-beige);
+    border: 10px;
+    padding: 32px 32px;
+    text-align: center;
+    justify-content: center;
+    color: var(--color-negro);
+    font-size: 22px;
+    margin: 4px 4px;
+    cursor: pointer;
+}
+
+.btn1:hover {
+    background-color:gray;
+}
+
+
+.fa-solid {
+   color: var(--color-gris);
+   font-size: 25px;
+
+}
+
+.fa-brands {
+    color: var(--color-beige);
+    text-decoration: none;
+}
+
+
+.ajustar-video{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+}
+
+.form-boton {
+    background-color: var(--color-hueso);
+    color: var(--color-negro);
+    border: none;
+    padding: 10px 20px;
+    font: inherit;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    justify-content: center;
+}
+
+.form-boton:hover {
+    background-color:darkgray;
+  }
+
+.caja4padre {
+    position: relative;
+}
+
+/* ESTILO PARA EL FORMULARIO  */
+.form-campo {
+    width: 100%;
+    margin-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font: inherit;
+    border: none; 
+    outline: none; 
+    border-bottom: 1px solid var(--color-gris);
+  }
+  
+  .form-boton {
+    background-color: rosybrown;
+    color: var(--color-hueso);
+    border: none;
+    padding: 10px 20px;
+    font: inherit;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .form-boton:hover {
+    background-color: var(--color-gris);
+  }
+  
+  .form-contacto a {
+    color: deeppink;
+    text-decoration: none; 
+  }
+  
+  .form-contacto textarea {
+    resize: none; 
+  }
+
+  .datos {
+    color: var(--color-gris);
+  }
+  .dato {
+    background-color: var(--color-beige);
+  }
+  .dt {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+
+  /* ESTILOS PARA DISEÑO WEB RESPONSIVE ESTÁNDAR DE DIFERENTES DISPOSIVITOS */
+
+  /* 1) PARA PANTALLAS GRANDES O DE ESCRITORIO (hasta 1200px) */
+@media screen and (max-width:1200px) {
+    .contenedor {
+      max-width: 80%;
+    }
+}
+
+  /* 2) PARA PANTALLAS PEQUEÑAS DE ESCRITORIO O DE LAPTOPS (hasta 1024px) */
+@media screen and (max-width:1024px) {
+    .contenedor {
+      max-width: 85%;
+    }
+
+    #tendencias {
+        background-position: center;
+    }
+
+    #cabezera .nav-logo {
+        width: 250px;
+    }
+  
+   #usuarios .col {
+    flex-basis: 50%;
+   } 
+
+   #extencion-video .col-50{
+    flex-basis: 100%;
+    max-width: 100%;
+}
+}
+
+  /* 3) PARA PANTALLAS DE TABLETAS (hasta 768px) */
+@media screen and (max-width:768px) {
+    .contenedor {
+      max-width: 90%;
+    }
+    #nosotros .col-33{
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+    
+    .fondo-consejo {
+        background-position: center;
+    }
+  
+    #usuarios .col-33 {
+      flex-basis: 50%;
+      max-width: 50%;
+    }
+
+    #tendencias {
+        background-position: center;
+    }
+
+    #extencion-video .col-50{
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+  
+     #contactanos-formulario .col {
+      flex-basis: 100%;
+      max-width: 100%;
+    }  
+}
+
+/* 4) PARA PANTALLAS DE CELULARES (hasta 480px) */
+@media screen and (max-width:480px) {
+    .contenedor {
+      max-width: 90%;
+    }
+  
+    #barra-superior .row {
+      flex-direction: column-reverse;
+      font-size: 0.8em;
+    }
+  
+    .nav-bar {
+      flex-direction: column;
+    }
+  
+    .nav-menu {
+      font-size: 0.8em;
+    }
+  
+    .nav-menu-item {
+      margin-left: 5px;
+    }
+  
+    .nav-menu-link {
+      padding: 5px;
+    }
+
+    #tendencias .texto-resaltado{
+      font-size: 1em;
+    }
+  
+    #usuarios .col {
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+  }
+  
+
+ 
